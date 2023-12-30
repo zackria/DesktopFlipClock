@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body #dragregion {
+  -webkit-app-region: drag;
+  background-color: transparent;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #edff14;
+  user-select: none;
+}
+
+button #close .close {
+  padding: 5px;
+  font-size: 0.8em;
+  color: grey;
+  -webkit-app-region: no-drag;
+}
+
+#close:hover {
+  color: #62ff00;
+}
+
+#aligncenter {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.clock {
+  width: auto;
+  height: auto;
+}
+
+.flip-clock-dot {
+  background: #ccc;
+}
+
+.flip-clock-meridium a {
+  color: #ccc;
+}

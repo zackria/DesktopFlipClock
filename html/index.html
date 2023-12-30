@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <title>Hello World!</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/flipclock.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div>
+      <div id="dragregion">
+      <h1>Time</h1>
+      <i class="fa-light fa-arrows-up-down-left-right"></i>
+      <h2 id="content"></h2>
+      <br>
+    </div>
+    <div id="aligncenter">
+      <button id="close" class="close" >&#10006;</button>
+      <button id="new">New</button>
+      <button id="old">Old</button>
+      <button id="fullscreen">FullScreen</button>
+    </div>
+    <div class="clock"></div>
+    <script src="../scripts/renderer.js" defer></script>
+    <script src="../scripts/jquery-3.7.1.js"></script>
+    <script src="../scripts/flipclock.js"></script>
+  
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function() {
+			
+			clock = $('.clock').FlipClock({
+		        clockFace: 'TwelveHourClock'
+		    });
+		});
+
+
+    </script>
+  </body>
+</html>
