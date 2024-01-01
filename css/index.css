@@ -7,59 +7,23 @@
   display: none;
 }
 
-body #dragregion {
-  -webkit-app-region: drag;
-  background-color: transparent;
+#container {
   display: flex;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #edff14;
-  user-select: none;
+  justify-content: space-between;
 }
 
-button #close .close {
-  padding: 5px;
-  font-size: 0.8em;
-  color: grey;
+#container > div {
+  width: 100px;
+  height: 30px;
+  border: 2px;
   -webkit-app-region: no-drag;
 }
 
-#close:hover {
-  color: #62ff00;
-}
-
-#aligncenter {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+/** Flip Clock Style Override **/
 .clock {
-  width: auto;
-  height: auto;
   zoom: 1;
   -moz-transform: scale(1);
-}
-
-@media screen and (max-width: 768px) {
-  .clock {
-    zoom: 0.8;
-    -moz-transform: scale(0.8);
-  }
-}
-@media screen and (max-width: 479px) {
-  .clock {
-    zoom: 0.6;
-    -moz-transform: scale(0.6);
-  }
-}
-@media screen and (max-width: 320px) {
-  .clock {
-    zoom: 0.45;
-    -moz-transform: scale(0.45);
-  }
+  -webkit-app-region: drag;
 }
 
 .flip-clock-dot {
@@ -67,5 +31,9 @@ button #close .close {
 }
 
 .flip-clock-meridium a {
+  color: #ccc;
+}
+
+.flip-clock-meridium a:hover {
   color: #ccc;
 }

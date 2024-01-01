@@ -15,3 +15,5 @@
 [https://github.com/objectivehtml/FlipClock/tree/master/compiled](https://github.com/objectivehtml/FlipClock/tree/master/compiled)
 
 [https://jquery.com/download/](https://jquery.com/download/)
+
+[https://icons.getbootstrap.com/](https://icons.getbootstrap.com/)

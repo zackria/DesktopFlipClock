@@ -4,7 +4,7 @@ require("electron-reload")(__dirname);
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 630,
+    width: 420,
     height: 200,
     frame: false,
     autoHideMenuBar: true,
@@ -40,7 +40,7 @@ function createWindow() {
 
   ipcMain.on("change-full", () => {
     const win = BrowserWindow.getAllWindows()[0];
-
+    win.setBackgroundColor("#fff");
     win.setFullScreen(true);
   });
 
